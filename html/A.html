@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_f81d8f3e8f4248d5893b5f8b464837fa {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_f81d8f3e8f4248d5893b5f8b464837fa" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_f81d8f3e8f4248d5893b5f8b464837fa = L.map(
+        'map_f81d8f3e8f4248d5893b5f8b464837fa', {
+        center: [0, 0],
+        zoom: 1,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_d18bb6372f3c4380b3ea4d5707dfaa2b = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_f81d8f3e8f4248d5893b5f8b464837fa);
+    
+                var poly_line_2cc2b2f55d5e47ee9b8e3694310bfaaf = L.polyline(
+                    [[35.6197, 139.728553], [35.626446, 139.723444], [35.633998, 139.71582800000002], [35.64669, 139.710106], [35.658516999999996, 139.701334], [35.670168, 139.702687], [35.683061, 139.702042], [35.690921, 139.70025800000002], [35.701306, 139.700044], [35.712284999999994, 139.70378200000002], [35.721204, 139.706587], [35.728926, 139.71038000000001], [35.731590000000004, 139.729329], [35.733492, 139.739345], [35.736489, 139.746875], [35.738062, 139.76086], [35.732135, 139.76678700000002], [35.727771999999995, 139.77098700000002], [35.720495, 139.778837], [35.713768, 139.777254], [35.707893, 139.77433200000002], [35.698683, 139.774219], [35.69169, 139.770883], [35.681382, 139.766084], [35.675069, 139.763328], [35.665498, 139.75964], [35.655646000000004, 139.75674899999999], [35.645736, 139.747575], [35.630152, 139.74043999999998], [35.6197, 139.728553]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}
+                    )
+                    .addTo(map_f81d8f3e8f4248d5893b5f8b464837fa);
+            
+    
+                
+
+                map_f81d8f3e8f4248d5893b5f8b464837fa.fitBounds(
+                    [[35.6197, 139.700044], [35.738062, 139.778837]],
+                    {}
+                    );
+            
+</script>
